@@ -9,9 +9,9 @@ PyShock is a Python based executable made to easily integrate PiShock into a pro
 
 ### Arguments
 
-`python PiShock.py <operation> <intensity 1-100> <duration 1-15>`
+PyShock supports command line arguments: `python PiShock.py <operation> <intensity 1-100> <duration 1-15>`
 
-Valid Operations:
+**Valid Operations:**
 - `shock`
 - `vibrate`
 - `beep`
