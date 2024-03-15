@@ -3,7 +3,7 @@ import json
 import requests
 import collections
 
-with open("PiShockConfig.json", "r") as jsonfile:
+with open("PyShockConfig.json", "r") as jsonfile:
 	jsonData = json.load(jsonfile)
 
 url = 'https://do.pishock.com/api/apioperate/'
@@ -34,7 +34,7 @@ if args[1]:
 			data["Duration"] = args[2]
 else:
 	print("Command line argument not provided, falling back to DefaultMode.")
-	Args1 = jsonData["DefaultMode"].lower()
+	Args1 = jsonData["Mode"].lower()
 
 if jsonData["TestMode"]:
 	data["Op"] = "2"
@@ -53,6 +53,5 @@ else:
 		data["Op"] = "2"
 		del data["Intensity"]
 
-# print(data)
 response = requests.post(url, json=data)
 print(response.text)
