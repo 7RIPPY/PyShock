@@ -1,6 +1,7 @@
 # About
 **PyShock** is a Python based executable made to easily integrate PiShock into a program.
 ## Usage
+- the .exe version can be found in the releases tab
 - PiShockConfig.json (usually) must be in the same directory as the main program (`PyShock.exe`)
 - The file can be ran with or without args.
 ## Arguments
