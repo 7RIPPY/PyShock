@@ -1,5 +1,5 @@
 ## About
-PyShock is a Python based executable made to easily integrate PiShock into a program.
+PyShock is a Python based tool made to easily integrate PiShock into a game, program, or application.
 
 ### Usage
 
